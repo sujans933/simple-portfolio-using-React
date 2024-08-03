@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: antiquewhite;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background-color: rgb(87, 87, 87);
+  color: white;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+header .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: blueviolet;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 15px;
+}
+.btn:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+nav {
+  background-color: rgb(35, 60, 61);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: brown;
+  /* background-color: aqua; */
+}
+
+section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section .services {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+section .services .service {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+section .services .service h3 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+}
+footer p {
+  margin: 0;
+}
