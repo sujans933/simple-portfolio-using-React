@@ -1,0 +1,82 @@
+1. Variables and Data Types
+
+    // Variables
+        let name = "Alex"; //String
+        const age = 30;     //number
+        var isStudent = true;    //boolean
+
+    // Data Types
+        -> String   //text Type
+        -> Number   //int, float
+        -> boolean  //true, false
+        -> Null     //null, " ", ' '
+        -> Array
+        -> Object
+        -> JSON
+        -> Undefined    let name
+                        console.log(name)
+        -> NaN (Not a Number) 
+
+    //Arrays
+        let colors = ["red", "green", "blue", "white"] 
+                        0,      1,      2,      3
+        console.log(colors[0])      //Output: red
+
+
+        let color = "red";
+        console.log(color);     output: red
+        
+
+        //Types Of Arrays
+
+            1. Single Dimentional Array
+                var friuits = ["Apple", "Banana", "Cherry"]
+                console.log(fruits[0])     //output: Apple
+
+                //Modifying Array Elements
+                    fruits[0] = "Avacodo";
+                    console.log(fruits[0])  //output: Avacodo
+
+                // Adding Element to an Array   
+                    fruits.push("Date");  
+
+                    fruits.unshift("orange");
+
+                // Removing Elements
+                    fruits.splice(2, 1, "Blueberry");
+
+                // Iterating over an Array
+                    fruits.forEach(function(fruit) {
+                        console.log(fruit);                 // Apple, Banana, Cherry
+                    })
+
+
+
+            2. Multi Dimentional Array[2D]
+
+                // Declearing a 2D Array
+                    var matrix = [
+                        [1, 2, 3]
+                        [4, 5, 6]
+                        [7, 8, 9]
+                    ];
+
+
+                    console.log(matrix[2][1])       //output: 8
+                    console.log(matrix[1][2])       //output: 6
+
+                
+
+
+    // Objects
+        let person = {                      {key: value}
+            FirstName: "Sujan";
+            LastName: "Shrestha";
+            Age: 28;
+        }
+
+        sujan shrestha/ shrestha sujan
+        console.log(person.FirstName); console.log(person.LastName);      // Sujan Shrestha
+        console.log(person.LastName); console.log(person.FirstName);        // Shrestha Sujan
+
+
