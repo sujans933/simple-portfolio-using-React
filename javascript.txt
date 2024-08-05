@@ -24,7 +24,7 @@
 
 
         let color = "red";
-        console.log(color);     //output: red
+        console.log("the selected color is ", color);     //output: red
         
 
         //Types Of Arrays
@@ -124,13 +124,73 @@
 
 3. Conditional
 
-    let number = 10;
+    let number = -5;
 
     // if-else statement/condition 
-
-        if(number  > 0) {
+        Syntax:
+            -5   >  0
+        if(number > 0) {
             console.log("The number is Positive")
         } else {
-            console.log("The number is Negative")
+            console.log("The number is Negative")   // Output : The number is Negative
+        } 
+
+
+
+    // Switch statement/condition
+
+        let fruit = "cherry"
+
+        Syntax:
+
+        Switch(fruit) {
+            case "apple":   
+                console.log("You selected apple");
+                break;
+            case "banana":
+                console.log("You selected banana");
+                break;
+            default:
+                console.log("Unknown fruit");
+                break;
         }
 
+
+4. Loops 
+
+    // for Loop
+
+        Syntax:
+        for(let i = 0; i <= 5; i++) {            // i = i + 1
+            console.log("For Loop iteration", i )
+        }
+
+           
+
+    // While Loop
+
+        let j = 0;
+
+        while(j < 5) {
+            console.log("For Loop iteration", j );
+            j++ ;
+        }
+
+        j = 0   // 0 < 5   //       j= 1          //0
+        j = 1   // 1 < 5     //     j = 2       // 1
+        j = 2   // 2 < 5    //      j = 3       //2
+        j = 3   // 3 < 5    //      j = 4       // 3
+        j = 4   // 4 < 5    //      j = 5        // 4
+        j = 5   // 5 <= 5   //      j = 6           //5
+        j = 6   // 6 <= 5    
+
+    // For-Each Loop (with an array)
+
+        let fruits = ["Apple", "Banana", "Cherry"];
+
+        fruits.forEach(function(a) {
+                console.log(fruit);                 // Apple, Banana, Cherry
+        })
+
+
+5. Functions
