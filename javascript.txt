@@ -194,3 +194,63 @@
 
 
 5. Functions
+
+    // Function Decleration
+    function greet() {
+        console.log("Hello, developer!");
+    }
+
+    // Function with Parameter
+    function greetPerson(person) {
+        console.log("Hello, " +person+ "!" )
+    }
+
+    // Function with return value
+    function add(a , b) {
+        return a + b
+    }
+
+
+    // Calling Function
+
+    greet();
+    greetPerson("Hari");
+    
+    let sum = add(5, 10);
+    console.log("The Sum of the two value is: ", sum);
+
+
+6. Objects
+
+    // Creating an Object
+
+    let car = {
+        company: "Toyoto",
+        color: "black",
+        year: "2020",
+        drive: function() {
+            console.log("The car is runnning");
+        }
+    };
+
+
+    // Accessing the objects properties
+        console.log(car.year)       //2020
+        console.log(car.company)       //Toyota
+        console.log(car["color"])       //black
+
+    // Calling objects method
+        car.drive()
+    
+
+    // Adding the properties or method
+        car.seats = 5;
+        car.horn = function() {
+            console.log("Beep beep!");
+        }
+
+        console.log(car.seats)       // 5
+
+
+7. Basic DOM Manipulation
+
