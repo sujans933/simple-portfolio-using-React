@@ -253,4 +253,11 @@
 
 
 7. Basic DOM Manipulation
-
+    -getElementById
+    -getElementByClassName
+    -getElementByTagName
+    -querySelector
+    -querySelectorAll
+    -textContent
+    -setAttribute and getAttribute
+    ...

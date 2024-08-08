@@ -1,88 +1,170 @@
+<!-- DOM Manipulation //(Document Object Model) -->
+
+<!-- getElementById -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <div id="myDiv">Hello, developer!</div>
+
+    <script>
+      const myDiv = document.getElementById("myDiv");
+      console.log(myDiv.textContent);
+    </script>
+  </body>
+</html> -->
+
+<!-- getElementsByClassName -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <div class="myClass">Hello,</div>
+    <div class="myClass">developer!</div>
+
+    <script>
+      const elements = document.getElementsByClassName("myClass");
+
+      for (let element of elements) {
+        console.log(element.textContent);
+      }
+    </script>
+  </body>
+</html> -->
+
+<!-- getElementByTagName -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <p>Paragraph First</p>
+    <p>Paragraph Second</p>
+
+    <script>
+      const paragraphs = document.getElementsByTagName("p");
+
+      for (let paragraph of paragraphs) {
+        console.log(paragraph.textContent);
+      }
+    </script>
+  </body>
+</html> -->
+
+<!-- querySelector -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>Paragraph First</p>
+      <p>Paragraph Second</p>
+    </div>
+    <script>
+      const firstParagraph = document.querySelector(".container p");
+      console.log(firstParagraph.textContent);
+    </script>
+  </body>
+</html> -->
+
+<!-- querySelectorAll -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>Paragraph First</p>
+      <p>Paragraph Second</p>
+      <p>Paragraph Third</p>
+    </div>
+    <script>
+      const allParagraphs = document.querySelectorAll(".container p");
+      //   allParagraphs.forEach((paragraph) => {
+      //     console.log(paragraph.textContent);
+      //   });
+      console.log(allParagraphs[2].textContent);
+    </script>
+  </body>
+</html> -->
+
+<!-- setAttribute and getAttribute -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <img id="myImage" src="images/HalfStar.png" alt="half star image" />
+    <button id="changeSrcBtn">Change Image Source</button>
+
+    <script>
+      const myImage = document.getElementById("myImage");
+      const changeSrcBtn = document.getElementById("changeSrcBtn");
+
+      changeSrcBtn.addEventListener("click", () => {
+        myImage.setAttribute("src", "images/pp.gif");
+      });
+
+      console.log(myImage.getAttribute("src"));
+    </script>
+  </body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="main.css" />
+    <title>DOM Manipulation</title>
+    <style>
+      #message {
+        font-size: 30px;
+        color: red;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1>Welcome to Our Landing Page</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <a href="" class="btn">Learn More</a>
-      </div>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
-    <section id="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
-          ex deleniti at et doloribus dolor quaerat officiis harum architecto
-          saepe similique excepturi, illo modi explicabo unde quo accusamus ad?
-        </p>
-      </div>
-    </section>
-    <section id="services">
-      <div class="container">
-        <h2>Our Services</h2>
-        <div class="services">
-          <div class="service">
-            <h3>Service One</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed
-              in iste omnis culpa laborum nam deleniti, quos velit ea
-              exercitationem, at ad dicta repellendus veritatis enim mollitia
-              labore nemo.
-            </p>
-          </div>
-          <div class="service">
-            <h3>Service Two</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed
-              in iste omnis culpa laborum nam deleniti, quos velit ea
-              exercitationem, at ad dicta repellendus veritatis enim mollitia
-              labore nemo.
-            </p>
-          </div>
-          <div class="service">
-            <h3>Service Three</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed
-              in iste omnis culpa laborum nam deleniti, quos velit ea
-              exercitationem, at ad dicta repellendus veritatis enim mollitia
-              labore nemo.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, dicta
-          odit quo nam aliquam praesentium corporis quis eaque minus porro
-          quibusdam dignissimos similique tempora voluptates. Quasi aspernatur
-          saepe eius enim.
-        </p>
-        <a href="test@mail.com" class="btn">Email Us</a>
-      </div>
-    </section>
+    <div id="message">Hello, this is a message.</div>
+    <button id="ChangeBtnTxt">Change Text</button>
+    <button id="ChangeBtnColor">Change Color</button>
 
-    <footer>
-      <div class="container">
-        <p>2024 Our Copyright</p>
-      </div>
-    </footer>
+    <script>
+      //get element by id
+      const messageDiv = document.getElementById("message");
+
+      const ChangeBtnTxt = document.getElementById("ChangeBtnTxt");
+      const ChangeBtnColor = document.getElementById("ChangeBtnColor");
+
+      //change text content
+      ChangeBtnTxt.addEventListener("click", () => {
+        messageDiv.textContent = "The text has been successfully changed!";
+      });
+
+      //change text color
+      ChangeBtnColor.addEventListener("click", () => {
+        messageDiv.style.color = "yellow";
+      });
+    </script>
   </body>
 </html>
