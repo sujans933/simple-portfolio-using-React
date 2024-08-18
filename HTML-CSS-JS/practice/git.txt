@@ -1,0 +1,84 @@
+                ecom
+    Seller      Buyer    Admin
+    CMS
+    Modules
+
+github ----> reposetory -> branch
+gitlab
+bitbucket
+
+
+reposetory ---------> 1.0.0
+
+1.0.0 ========> version.update.patch
+
+
+
+dev1    dev2    dev3    dev4
+auth    prod    cat     brand
+banner
+
+
+init
+connect
+Link remote
+.
+.
+.
+.
+.
+1. stage
+    tracking
+2. commit   //github class completed
+3. pull
+    3.1 conflict resolution
+            3.1.1 follow step 1 & 2
+4. push
+
+
+
+master/main branch      // default branch
+...................
+
+
+git(software)
+
+step 1: git initiallize
+        git init
+
+step 2: remote add
+        git remote add origin <url>
+            git remote -v
+
+step 3: Staging
+        3.1 tracking
+                git add . //to add all the changes
+                git commit -m "<commit>"    //header added
+                git status
+        3.1 specific
+                git add <filename>
+
+step 4: Pull the Code
+        git pull origin (option)
+        git clone <httpLink>
+
+        4.1. If conflict
+                -manually open the files containing conflict
+        4.2. follow step 3
+        
+step 5: Push the Code
+        git branch      //to see the branch list and active branch
+        git push origin <branch>
+        git push origin dev1:main 
+        git merge dev1 {if on branch master/main}
+
+
+---->To create a new branch
+        git checkout -b <branchname>
+
+---->To switch the branch
+---->To checkout to an existing
+        git checkout <branchname>
+
+----->To view log
+        git log
