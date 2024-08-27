@@ -1,5 +1,6 @@
 import React from "react";
 import MaxWidthWrapper from "../../section/MaxWidthWrapper";
+import Button from "../../section/Button";
 
 function Header() {
   const lists = [
@@ -19,9 +20,7 @@ function Header() {
             </a>
           ))}
         </div>
-        <button className="bg-primary text-white hover:bg-white hover:border-[1.5px] hover:border-primary hover:text-primary rounded-[5px] px-[42px] py-[18px] ">
-          Contact Me
-        </button>
+        <Button title="Contact Me" type="submit" varient="bg-primary" />
       </div>
     </MaxWidthWrapper>
   );
