@@ -4,10 +4,10 @@ import Button from "../../section/Button";
 
 function Header() {
   const lists = [
-    { title: "home", link: "/#" },
-    { title: "portfolio", link: "/#" },
-    { title: "about me", link: "/#" },
-    { title: "testimonials", link: "/#" },
+    { title: "home", link: "home" },
+    { title: "portfolio", link: "#" },
+    { title: "about me", link: "#" },
+    { title: "testimonials", link: "#" },
   ];
   return (
     <MaxWidthWrapper>

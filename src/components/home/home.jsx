@@ -5,6 +5,7 @@ import MaxWidthWrapper from "../section/MaxWidthWrapper";
 function Home() {
   return (
     <div
+      id="home"
       className="bg-[#F5FCFF] h-[100vh] pt-[133px] "
       style={{ boxShadow: "inset 0 11px 80px 0 rgba(0,0,0,0.1) " }}
     >
