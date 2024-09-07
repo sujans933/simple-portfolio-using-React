@@ -4,7 +4,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 function Aboutme() {
   return (
     <MaxWidthWrapper>
-      <div className="flex items-center gap-[114px] py-[133px] ">
+      <div id="about-me" className="flex items-center gap-[114px] py-[133px] ">
         <div className="w-[50%]">
           <img
             src="about-me.png"

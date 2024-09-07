@@ -31,7 +31,7 @@ function Expertise() {
           <p className="text-[21px] font-semibold ">My Skills</p>
           <h1 className="text-[64px] font-bold ">My Expertise</h1>
         </div>
-        <div className="flex justify-between">
+        <div className="flex lg:flex-row flex-col lg:gap-0 gap-4 justify-between">
           {expertise.map((item, index) => (
             <div
               key={index}

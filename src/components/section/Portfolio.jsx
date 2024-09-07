@@ -23,7 +23,7 @@ function Portfolio() {
 
   return (
     <MaxWidthWrapper>
-      <div className="flex flex-col gap-[106px] py-[149px] ">
+      <div id="portfolio" className="flex flex-col gap-[106px] py-[149px] ">
         <div className="flex justify-between items-center">
           <div>
             <p className="text-[21px] font-semibold ">Recent Projects</p>

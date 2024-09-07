@@ -24,7 +24,7 @@ function Testimonial() {
     },
   ];
   return (
-    <div className=" bg-[#F5FCFF]  ">
+    <div id="testimonials" className=" bg-[#F5FCFF]  ">
       <MaxWidthWrapper>
         <div className="py-[150px] flex flex-col gap-[106px] ">
           <div className="firstRow">
@@ -33,16 +33,16 @@ function Testimonial() {
               Customer testimonials
             </h1>
           </div>
-          <div className="flex justify-between">
+          <div className="carousel carousel-center w-full flex lg:gap-0 gap-[12px]   justify-between">
             {items.map((item, index) => (
               <div
                 key={index}
-                className="text-[21px] flex flex-col gap-[42px] w-[100%] max-w-[554px] p-[42px] border-[1.33px] border-[#006B6A] rounded-[8px]  "
+                className="carousel-item w-[420px] text-[21px] flex flex-col gap-[42px] max-w-[554px] p-[42px] border-[1.33px] border-[#006B6A] rounded-[8px]  "
               >
                 <div className="flex gap-2">
                   <Star /> <Star /> <Star /> <Star /> <Star />
                 </div>
-                <p className=" font-normal ">{item.desc} </p>
+                <p className=" font-normal">{item.desc} </p>
                 <div className="flex items-center ">
                   <img
                     src={item.img}
